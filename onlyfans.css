@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+@keyframes rotate {
+    from { transform:rotate3d(1, 1, 1, 0deg); }
+  
+    to { transform:rotate3d(1, 1, 1, 360deg); }
+}
+
+body {
+    background-color: black;
+    overflow:hidden;
+    margin: 0px;
+}
+
+
+.spinnysex {
+    font-size: 150px;
+    font-family: impact;
+    text-align: center;
+    color:white;
+    animation: rotate 5s linear 1s infinite running;                  
+}
+.spinnysex-shadow {
+    text-shadow:    -2px 2px  rgb(134, 0, 134),
+                    -4px 4px  rgb(122, 0, 122),
+                    -6px 6px  rgb(111, 0, 111),
+                    -8px 8px  rgb(100, 0, 100),
+                    -10px 10px rgb(89, 0, 89),
+                    -12px 12px rgb(79, 0, 79),
+                    -14px 14px rgb(67, 0, 67),
+                    -16px 16px rgb(55, 0, 55);
+}
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 150pt;
+
+    text-align: center;
+
+    user-select: none;
+    color: white;
+}
