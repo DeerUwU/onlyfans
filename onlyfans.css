@@ -30,6 +30,7 @@ body {
 #landingpage-header {
     color: white;
     font-size: 20px;
+    text-align: center;
 }
 .menubutton {
     display: inline-block;
@@ -101,8 +102,8 @@ body {
     display: inline-block;
 
     font-family: "Raleway", sans-serif;
-    font-size: 150pt;
-
+    /* font-size: 150pt; */
+    font-size: 20vw; /* auto scales text */
     text-align: center;
 
     user-select: none;
