@@ -1,11 +1,21 @@
-const sleep = (milliseconds) => {
-    return new Promise((resolve) => setTimeout(resolve, milliseconds));
-  };
+$("#button-enterpage").click(function () {
+    const fadeout = [{ opacity: "1", easing: "ease-in-out" }, { opacity: "0" }];
+    const fadeoutTiming = {
+      duration: 500 /*500 ms*/,
+      iterations: 1,
+      fill: "forwards",
+    };
+    const landingpage = document.querySelector(".landingpage");
+    landingpage.animate(fadeout, fadeoutTiming);
+
+    $(".landingpage").hide(500);
+});
 
 const elts = {
     text1: document.getElementById("text1"),
     text2: document.getElementById("text2")
 };
+
 
 const texts = [
     "SUPER",
@@ -20,7 +30,6 @@ const morphTime = 1;
 const cooldownTime = 0.25;
 
 let textIndex = texts.length - 1;
-let soundIndex = superHot.length - 1;
 let time = new Date();
 let morph = 0;
 let cooldown = cooldownTime;
