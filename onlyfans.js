@@ -9,9 +9,13 @@ $("#button-enterpage").click(function () {
     landingpage.animate(fadeout, fadeoutTiming);
 
     $(".landingpage").hide(500);
-});
 
-const elts = {
+    var superHot = [
+        "./hot.mp3",
+        "./super.mp3"
+    ]
+
+    const elts = {
     text1: document.getElementById("text1"),
     text2: document.getElementById("text2")
 };
@@ -21,10 +25,7 @@ const texts = [
     "SUPER",
     "HOT"
 ];
-const superHot = [
-    "./hot.mp3",
-    "./super.mp3"
-]
+
 
 const morphTime = 1;
 const cooldownTime = 0.25;
@@ -101,3 +102,6 @@ function animate() {
 }
 
 animate();
+
+});
+
